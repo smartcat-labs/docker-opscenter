@@ -13,7 +13,7 @@ RUN \
   wget --user $DSE_USERNAME --password $DSE_PASSWORD -O - http://downloads.datastax.com/enterprise/opscenter-$OPSCENTER_VERSION.tar.gz \
   | tar xzf - --strip-components=1 -C "/opt/opscenter";
 
-COPY	. /src
+COPY . /src/
 
 # Copy over daemons
 RUN	\
